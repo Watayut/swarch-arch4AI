@@ -1,8 +1,8 @@
 # Tutorial 6 worksheet: serving patterns
 
-**Name / ชื่อ:**
+**Name / ชื่อ:** Watayut Aiamanan
 
-**Student ID / รหัสนิสิต:**
+**Student ID / รหัสนิสิต:** 6970267821
 
 This is **individual work**: each student completes and submits their own copy, in their own fork.
 
@@ -16,8 +16,8 @@ Copy result rows from `results/runs.csv` (or the load test's output) into the ta
 
 | Run | p50 ms | p95 ms | accuracy | large calls |
 |---|---|---|---|---|
-| t0-large | | | | |
-| t0-small | | | | |
+| t0-large | 505 | 585 | 93.5% | 100% |
+| t0-small | 58 | 117 | 72.5% | 0% |
 
 **Q0.** What does the large model buy, and what does it cost?
 
@@ -29,8 +29,8 @@ Copy result rows from `results/runs.csv` (or the load test's output) into the ta
 
 | Run | run time (s) | p50 ms | p95 ms | errors | pending | accuracy |
 |---|---|---|---|---|---|---|
-| t1-before | | | | | | |
-| t1-after | | | | | | |
+| t1-before | 26.2 | 227 | 352 | 18 | 0 | 93.4% |
+| t1-after | 9.3 | 373 | 1010 | 0 | 27 | 93.1% |
 
 **Q1.1** In `t1-before`, p50 can look *better* than the baseline. Why is p50 misleading here? Which column tells the real story?
 
@@ -60,10 +60,10 @@ Copy result rows from `results/runs.csv` (or the load test's output) into the ta
 
 | Run | threshold | p50 ms | p95 ms | accuracy | large calls |
 |---|---|---|---|---|---|
-| t2-0.6 | 0.6 | | | | |
-| t2-0.7 | 0.7 | | | | |
-| t2-0.8 | 0.8 | | | | |
-| t2-0.9 | 0.9 | | | | |
+| t2-0.6 | 0.6 | 19 | 537 | 91.5% | 38% |
+| t2-0.7 | 0.7 | 375 | 581 | 93.0% | 53% |
+| t2-0.8 | 0.8 | 447 | 577 | 93.5% | 64% |
+| t2-0.9 | 0.9 | 462 | 579 | 93.5% | 77% |
 
 **Q2.1** Which threshold would you deploy for CampusEats, and why? Name the quality you give up.
 
@@ -87,7 +87,8 @@ Copy result rows from `results/runs.csv` (or the load test's output) into the ta
 
 | Run | p50 ms | p95 ms | accuracy | large calls | cache hits |
 |---|---|---|---|---|---|
-| t3-cache | | | | | |
+| t3-cache-0.8 | 28 | 546 | 93.5% | 40% | 34% |
+| t3-cache (threshold 0.7, for comparison) | 17 | 550 | 93.0% | 38% | 35% |
 
 **Q3.1** Which reviews benefit from the cache, and which never will?
 

@@ -1,14 +1,14 @@
 # Task 4: Deployment topologies and trade-offs
 
-**Name / ชื่อ:**
+**Name / ชื่อ:** Watayut Aiamanan
 
-**Student ID / รหัสนิสิต:**
+**Student ID / รหัสนิสิต:** 6970267821
 
 This is **individual work**: each student completes and submits their own copy, in their own fork.
 
 *งานนี้เป็น**งานเดี่ยว** นิสิตแต่ละคนทำและส่งงานของตัวเอง ใน fork ของตัวเอง*
 
-**Scenario (A, B or C) / Scenario ที่เลือก:**
+**Scenario (A, B or C) / Scenario ที่เลือก:** B (Canteen kiosk)
 
 Choose **one** scenario below. If the last digit of your student ID is odd, take A or B; if it is even, take B or C. Use your measurements from Tutorial 6 as evidence: cite run names from `results/runs.csv`. Answer in Thai or English.
 
